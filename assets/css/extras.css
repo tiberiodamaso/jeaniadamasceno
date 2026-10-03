@@ -1,15 +1,8 @@
 /* Ajustes manuais - carregado por ultimo. Cada regra diz o porque. */
 
-/* Rodape, abaixo de 768px: o @ do Instagram e uma palavra so de ~346px em
-   font-size:2em, numa coluna de ~255px. Ele nao quebra linha e empurrava a
-   pagina para o lado (rolagem horizontal) em 360-414px; na home, onde o body
-   tem overflow-x:hidden, ele aparecia cortado. O telefone usa a mesma regra e
-   acompanha, para os dois continuarem do mesmo tamanho. O #contato garante
-   especificidade sobre a regra original, que chega por CSS assincrono. */
+/* Rodape: o @ do Instagram e uma palavra so e, no tamanho original (2em), empurrava
+   a pagina para o lado em 360-414px. Os tamanhos do rodape agora ficam em custom.css;
+   esta regra so garante que nenhuma palavra longa volte a transbordar. */
 @media only screen and (max-width:767px){
-  #contato .et_pb_icon_list_item_0_tb_footer.et_pb_icon_list_item .et_pb_icon_list_text,
-  #contato .et_pb_icon_list_item_1_tb_footer.et_pb_icon_list_item .et_pb_icon_list_text{
-    font-size:min(2em,5.5vw);
-  }
   #contato .et_pb_icon_list_text{overflow-wrap:anywhere;min-width:0}
 }
