@@ -1,1 +1,18 @@
 #main-footer{display:none}
+
+/* CRM e RQE (Resolucao CFM 2.336/2023): na secao Formacao e no rodape */
+.registro-medico{font-family:'Open Sans',Helvetica,Arial,Lucida,sans-serif;font-size:15px;font-weight:600;letter-spacing:.5px;line-height:1.5;color:#804080;margin:2px 0 0;padding:0}
+#contato .registro-medico--rodape{width:100%;text-align:center;color:#fff;font-size:14px;font-weight:400;margin:4px 0 0}
+
+/* Atendimento particular e formas de pagamento */
+.atendimento-info{font-family:'Open Sans',Helvetica,Arial,Lucida,sans-serif;line-height:1.5}
+.atendimento-info p{margin:0;padding:0}
+.atendimento-info p:first-child{font-weight:700}
+/* topo: sobre a foto, texto claro num painel escuro translucido - a janela ao fundo e clara */
+.et_pb_fullwidth_header .atendimento-info--topo{display:inline-block;max-width:520px;margin-top:22px;padding:10px 16px;border-radius:4px;background:rgba(35,18,45,.62);font-size:16px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+/* rodape: alinhado ao texto do telefone (o icone ocupa ~45px a esquerda) */
+#contato .atendimento-info--rodape{width:100%;padding-left:45px;box-sizing:border-box;margin:-4px 0 18px;font-size:15px;color:#fff}
+@media only screen and (max-width:767px){
+  .et_pb_fullwidth_header .atendimento-info--topo{font-size:14px;margin-top:16px;padding:8px 12px}
+  #contato .atendimento-info--rodape{font-size:14px}
+}
