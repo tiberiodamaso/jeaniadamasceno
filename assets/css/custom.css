@@ -31,3 +31,11 @@
   #contato .et_pb_icon_list_item .et-pb-icon{font-size:24px}
   #contato .atendimento-info--rodape{padding-left:34px}
 }
+
+/* Rodape: telefone, Instagram e endereco sao <a> reais (antes: link por JS).
+   O <a> envolve icone + texto e reproduz o flex do <li> (linha, centralizado,
+   10px de vao) para o rodape ficar identico; cor e fonte continuam vindo das
+   regras do icone e do texto. */
+#contato .et_pb_icon_list_item a.rodape-link{display:flex;flex:1 1 auto;min-width:0;align-items:center;column-gap:10px;color:inherit;text-decoration:none}
+#contato .et_pb_icon_list_item a.rodape-link:hover,
+#contato .et_pb_icon_list_item a.rodape-link:focus{color:inherit;text-decoration:none}
